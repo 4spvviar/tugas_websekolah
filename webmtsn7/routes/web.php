@@ -13,3 +13,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Route::get('/', [HomeController::class, 'index']);
+Route::get('/profil', [ProfilSekolahController::class, 'index']);
+Route::get('/ekstrakurikuler', [EkstrakurikulerController::class, 'index']);
+Route::get('/galeri', [GaleriController::class, 'index']);
+Route::get('/berita', [BeritaController::class, 'index']);
+Route::get('/guru', [GuruController::class, 'index']);
+Route::get('/siswa', [SiswaController::class, 'index']);
+

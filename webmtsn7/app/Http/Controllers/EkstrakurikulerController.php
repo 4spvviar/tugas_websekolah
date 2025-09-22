@@ -2,9 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\Ekstrakurikuler;
 
 class EkstrakurikulerController extends Controller
 {
     //
+    public function index() {
+        $ekskul = Ekstrakurikuler::all();
+        return view('ekskul.index', compact('ekskul'));
+    }
 }

@@ -18,7 +18,7 @@ return new class extends Migration
 
             // Relasi ke users
             $table->foreignId('user_id')
-                ->constrained('users')
+                ->constrained('users', 'id_user')
                 ->onDelete('cascade');
 
             $table->timestamps();

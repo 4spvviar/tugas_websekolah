@@ -4,6 +4,8 @@ namespace Database\Seeders;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Seeder;
+use App\Models\Ekstrakurikuler;
+
 
 class EkstrakurikulerSeeder extends Seeder
 {
@@ -13,9 +15,15 @@ class EkstrakurikulerSeeder extends Seeder
     public function run(): void
     {
         //
-        DB::table('ekstrakurikuler')->insert([
-            ['nama_ekskul' => 'Pramuka', 'pembina' => 'Pak Agus', 'jadwal_latihan' => 'Sabtu 08:00', 'deskripsi' => 'Melatih kedisiplinan dan kepemimpinan', 'gambar' => 'pramuka.jpg'],
-            ['nama_ekskul' => 'Futsal', 'pembina' => 'Pak Budi', 'jadwal_latihan' => 'Jumat 15:00', 'deskripsi' => 'Latihan futsal mingguan', 'gambar' => 'futsal.jpg'],
-        ]);
+        $data = [
+            ['nama' => 'Pramuka', 'deskripsi' => 'Melatih kedisiplinan dan kepemimpinan.'],
+            ['nama' => 'PMR', 'deskripsi' => 'Palang Merah Remaja, kegiatan sosial dan kesehatan.'],
+            ['nama' => 'Futsal', 'deskripsi' => 'Ekstrakurikuler olahraga futsal.'],
+            ['nama' => 'Paduan Suara', 'deskripsi' => 'Mengembangkan bakat seni musik.'],
+        ];
+
+        foreach ($data as $ekskul) {
+            Ekstrakurikuler::create($ekskul);
+        }
     }
 }

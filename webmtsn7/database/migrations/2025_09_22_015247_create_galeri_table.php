@@ -12,12 +12,9 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('galeri', function (Blueprint $table) {
-            $table->id('id_galeri');
-            $table->string('judul', 50);
-            $table->text('keterangan')->nullable();
-            $table->string('file', 100);
-            $table->enum('kategori', ['Foto','Video']);
-            $table->date('tanggal');
+            $table->id();
+            $table->string('judul');
+            $table->string('gambar'); // simpan URL atau path gambar
             $table->timestamps();
         });
     }

@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\Galeri;
 use Illuminate\Support\Facades\DB;
 
 class GaleriSeeder extends Seeder
@@ -13,9 +14,14 @@ class GaleriSeeder extends Seeder
     public function run(): void
     {
         //
-        DB::table('galeri')->insert([
-            ['judul' => 'Upacara 17 Agustus', 'keterangan' => 'Dokumentasi peringatan HUT RI', 'file' => 'upacara.jpg', 'kategori' => 'Foto', 'tanggal' => '2025-08-17'],
-            ['judul' => 'Lomba Futsal', 'keterangan' => 'Final turnamen futsal antar kelas', 'file' => 'futsal.mp4', 'kategori' => 'Video', 'tanggal' => '2025-07-20'],
-        ]);
+        $data = [
+            ['judul' => 'Upacara Bendera', 'gambar' => 'https://via.placeholder.com/200?text=Upacara'],
+            ['judul' => 'Lomba Futsal', 'gambar' => 'https://via.placeholder.com/200?text=Futsal'],
+            ['judul' => 'Kegiatan Pramuka', 'gambar' => 'https://via.placeholder.com/200?text=Pramuka'],
+        ];
+
+        foreach ($data as $item) {
+            Galeri::create($item);
+        }
     }
 }

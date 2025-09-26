@@ -12,15 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('profil_sekolah', function (Blueprint $table) {
-            $table->id('id_profil');
-            $table->string('nama_sekolah', 40);
-            $table->string('kepala_sekolah', 40);
-            $table->string('logo', 100)->nullable();
-            $table->string('npsn', 10)->nullable();
-            $table->text('alamat')->nullable();
-            $table->string('kontak', 15)->nullable();
-            $table->text('visi_misi')->nullable();
-            $table->year('tahun_berdiri')->nullable();
+            $table->id();
+            $table->string('nama');
             $table->text('deskripsi')->nullable();
             $table->timestamps();
         });

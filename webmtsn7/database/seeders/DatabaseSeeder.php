@@ -16,13 +16,9 @@ class DatabaseSeeder extends Seeder
         // User::factory(10)->create();
 
         $this->call([
-            UserSeeder::class,
             ProfilSekolahSeeder::class,
-            GuruSeeder::class,
-            SiswaSeeder::class,
             EkstrakurikulerSeeder::class,
             GaleriSeeder::class,
-            BeritaSeeder::class,
         ]);
     }
 }

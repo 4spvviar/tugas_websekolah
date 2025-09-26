@@ -428,7 +428,7 @@
 
                 <div class="profile-card">
                     <div class="profile-icon">🎤</div>
-                    <h3>Paduan Suara</h3>
+                    <h3>Panduan Suara</h3>
                     <p>Mengembangkan bakat seni musik.</p>
                 </div>
             </div>
@@ -441,7 +441,7 @@
             <div class="profile-grid">
                 <div class="profile-card">
                     <div class="profile-icon">🎓</div>
-                    <h3>Nama Sekolah</h3>
+                    <h3>MTsN 7 Tasikmalaya</h3>
                     <p>MTsN 7 Tasikmalaya adalah sekolah madrasah yang berkomitmen dalam memberikan pendidikan berkualitas dengan menggabungkan ilmu pengetahuan dan nilai-nilai islami.</p>
                 </div>
 
@@ -493,7 +493,8 @@
     <footer class="footer">
         <div class="footer-content">
             <h3>MTsN 7 Tasikmalaya</h3>
-            <p>Jl. Pendidikan No. 123, Tasikmalaya, Jawa Barat</p>
+            <p>Kompleks Ponpes Al Manshuriyah No.335 Kampung Nanggerang,
+                RT.027/RW.04, Kec. Salawu, Kabupaten Tasikmalaya</p>
             <p>Telp: (0265) 123456 | Email: info@mtsn7tasikmalaya.sch.id</p>
             <p>&copy; 2025 MTsN 7 Tasikmalaya. All rights reserved.</p>
         </div>
